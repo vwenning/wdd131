@@ -63,3 +63,22 @@ p {
 li {
     padding-bottom: 20px;
 }
+
+
+
+
+
+
+/* Dark theme styles */
+body.dark {
+    background-color: #333;
+    color: white;
+}
+
+body.dark h2 {
+    color: #93c2db; /* Lighter blue for better contrast */
+}
+
+body.dark .logo {
+    content: url('images/byui-logo_white.webp'); /* Switch to the white logo */
+}

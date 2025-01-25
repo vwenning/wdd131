@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
+
+:root {
+    --primary-color: #52489c;
+    --secondary-color: #59c3c3;
+    --accent-color: #f45b69;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: Mooli, san-serif;
+}
+
+nav {
+    font-family: var(--secondary-font);
+    color: var(--text-light);
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+
+}
+
+h1,
+h3 {
+    font-family: var(--secondary-font);
+    color: var(--text-light);
+    align-items: center;
+}
+
+h4 {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 3 rem;
+    font-size: 3rem;
+}
+
+a {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a:hover {
+    color: var(--text-dark);
+}
+
+a:visited {
+    color: var(--text-light);
+    text-decoration: underline;
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1em;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    border: 10px solid #000;
+    padding: 30px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+nav {
+    padding: 10px;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+
+button {
+    font: var(--secondary-font);
+    color: var(--text-light);
+    all: unset;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 700px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .drop-down {
+        display: none;
+    }
+
+    .drop-down.open {
+        display: block;
+    }
+
+    button:hover {
+        color: var(--text-dark);
+
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    button {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        color: var(--text-light);
+        list-style-type: none;
+        gap: 3rem;
+    }
+
+    .drop-down {
+        display: inline-flex;
+        color: var(--text-light);
+    }
+}

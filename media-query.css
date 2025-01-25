@@ -1,0 +1,48 @@
+body {
+    font-family: 'Roboto';
+}
+
+header {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 2px lightgray;
+    padding: 1rem;
+    background-color: lightblue;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 2px lightgray;
+    padding: 1rem;
+    background-color: lightblue;
+}
+
+footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 2px lightgray;
+    padding: 1rem;
+    background-color: lightblue;
+}
+
+section {
+    padding: 1rem;
+    background-color: white;
+}
+
+
+@media viewport and (min-width: 500px) {
+    header {
+      background-color: black;
+      color: white;
+    }
+  
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }

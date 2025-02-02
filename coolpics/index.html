@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Victoria Wenning" />
-        <meta name="description" content="This is a photography gallery.">
-        <title>Cool Pics</title>
-        <script src="coolpics.css" defer></script>
-        <script src="coolpics.js" defer></script>
-        <link rel="stylesheet" href="coolpics.css" />
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Victoria Wenning" />
+    <meta name="description" content="This is a photography gallery.">
+    <title>Cool Pics</title>
+    <script src="coolpics.js" defer></script>
+    <link rel="stylesheet" href="coolpics.css" />
+</head>
+
 <body>
     <header>
         <h1>Cool Pics 📷</h1>
-        <button onClick="toggleMenu()">Menu</button>
+        <button class="nav-menu-btn" onClick="toggleMenu()">Menu</button>
         <nav id="drop-down" class="drop-down">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -22,38 +23,38 @@
                 <li><a href="index.html">About</a></li>
                 <li><a href="index.html">Contact</a></li>
             </ul>
-        
+
         </nav>
     </header>
     <h4>Current Work</h4>
     <main>
         <section class="gallery">
-            <figure>  
-                <img src="images/norris-sm.jpeg" alt="picture">
+            <figure>
+                <img class="frame" src="images/norris-sm.jpeg" alt="picture">
             </figure>
-            <figure>  
-                <img src="images/image2.jpg" alt="picture">
+            <figure>
+                <img class="frame" src="images/image2.jpg" alt="picture">
             </figure>
-            <figure>  
-                <img src="images/image3.jpg" alt="picture">
+            <figure>
+                <img class="frame" src="images/image3.jpg" alt="picture">
             </figure>
-            <figure>  
-                <img src="images/image4.webp" alt="picture">
+            <figure>
+                <img class="frame" src="images/image4.webp" alt="picture">
             </figure>
-            <figure>  
-                <img src="images/image5.jpg" alt="picture">
+            <figure>
+                <img class="frame" src="images/image5.jpg" alt="picture">
             </figure>
-            <figure>  
-                <img src="images/image6.avif" alt="picture">
+            <figure>
+                <img class="frame" src="images/image6.avif" alt="picture">
             </figure>
-            <figure>  
-                <img src="images/image7.webp" alt="picture">
+            <figure>
+                <img class="frame" src="images/image7.webp" alt="picture">
             </figure>
-            <figure>  
-                <img src="images/image8.jpg" alt="picture">
+            <figure>
+                <img class="frame" src="images/image8.jpg" alt="picture">
             </figure>
-            <figure>  
-                <img src="images/image9.avif" alt="picture">
+            <figure>
+                <img class="frame" src="images/image9.avif" alt="picture">
             </figure>
         </section>
 
@@ -63,4 +64,5 @@
 
     </footer>
 </body>
+
 </html>

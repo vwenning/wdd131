@@ -84,6 +84,13 @@ footer {
     justify-content: center;
 }
 
+.image-alt-text {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
 .viewer {
     position: fixed;
     top: 0;
@@ -92,7 +99,8 @@ footer {
     bottom: 0;
     background: rgba(0, 0, 0, 0.75);
     display: grid;
-    grid-template-rows: auto 1fr;  /* First row for the button, second for the image */
+    grid-template-rows: auto 1fr;
+    /* First row for the button, second for the image */
     z-index: 10;
     align-items: center;
     justify-items: center;

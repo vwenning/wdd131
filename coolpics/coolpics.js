@@ -5,10 +5,13 @@ function toggleMenu() {
 }
 
 function viewerTemplate(pic, alt) {
-    return `<div class="viewer">
-      <button class="close-viewer">X</button>
-      <img src="${pic}" alt="${alt}">
-      </div>`;
+    return `
+        <div class="viewer">
+            <button class="close-viewer">X</button>
+            <img src="${pic}" alt="${alt}">
+            <p class="image-alt-text">${alt}</p> <!-- Display alt text below the image -->
+        </div>
+    `;
 }
 
 function viewHandler(event) {
@@ -26,6 +29,7 @@ function viewHandler(event) {
 
         // Get the alt text from the clicked image
         const altText = clickedImage.getAttribute("alt");
+        console.log("Alt text:", altText);
 
         // Insert the viewer template into the body
         document.body.insertAdjacentHTML("afterbegin", viewerTemplate(fullImgSrc, altText));

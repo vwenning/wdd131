@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Review Wireframe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header, nav, main, footer {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        .search-bar, .genre-filter, .age-filter, .top-rated, .new-reviews {
+            border: 1px dashed #999;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .book-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .book-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Book Review Site</h1>
+        <p>Helping parents and children find the best books</p>
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Browse by Genre</li>
+            <li>Browse by Age</li>
+            <li>Top Rated</li>
+            <li>Newest Reviews</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <main>
+        <section class="search-bar">
+            <h2>Search for a Book</h2>
+            <input type="text" placeholder="Enter book title...">
+            <button>Search</button>
+        </section>
+        <section class="genre-filter">
+            <h2>Filter by Genre</h2>
+            <select>
+                <option>Fantasy</option>
+                <option>Science Fiction</option>
+                <option>Mystery</option>
+                <option>Historical Fiction</option>
+            </select>
+        </section>
+        <section class="age-filter">
+            <h2>Filter by Age Group</h2>
+            <select>
+                <option>10-12</option>
+                <option>12-14</option>
+                <option>14-16</option>
+            </select>
+        </section>
+        <section class="top-rated">
+            <h2>Top Rated Books</h2>
+            <div class="book-list">
+                <div class="book-item">Book 1</div>
+                <div class="book-item">Book 2</div>
+                <div class="book-item">Book 3</div>
+            </div>
+        </section>
+        <section class="new-reviews">
+            <h2>Newest Reviews</h2>
+            <div class="book-list">
+                <div class="book-item">Book 4</div>
+                <div class="book-item">Book 5</div>
+                <div class="book-item">Book 6</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Book Review Site - All Rights Reserved</p>
+    </footer>
+</body>
+</html>

@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				<ul>
 					<li class="article-info"><strong>Age:</strong> ${article.ages}</li>
 					<li class="article-info"><strong>Genre:</strong> ${article.genre}</li>
-					<li class="article-info"><strong>Rating:</strong> ${article.stars}</li>
+					<li class="article-info"><strong></strong> ${article.stars}</li>
 				</ul>
 			</div>
 			<div class="article-content">

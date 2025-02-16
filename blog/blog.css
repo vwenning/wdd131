@@ -63,12 +63,12 @@ article {
 
 .article-details {
     flex: 1;
-    text-align: right;
+    text-align: left;
     font-size: 16px; /* Increased font size for the date */
     color: #473144;
     border-right: 1px solid #EFC69B;
     padding: 0 1.5rem; /* Added spacing on both sides */
-    min-width: 120px; /* Ensure spacing */
+    min-width: 160px; /* Ensure spacing */
     line-height: 1.2; /* Reduced space between list items */
 }
 

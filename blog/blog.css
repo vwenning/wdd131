@@ -12,18 +12,19 @@ header {
 }
 
 h1 {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 nav ul {
     list-style: none;
     padding: 1rem;
     display: flex;
-    justify-content: end;
-    justify-items: end;
+    justify-content: flex-end;
     gap: 20px;
     border-top: 1px solid #EFC69B;
     border-bottom: 1px solid #EFC69B;
+    max-width: 900px; /* Ensure alignment with main content */
+    margin: 0 auto;
 }
 
 nav ul li {
@@ -41,28 +42,34 @@ main {
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
+    max-width: 900px; /* Restrict width to match navbar */
+    margin: 0 auto;
 }
 
 .articles {
     flex: 3;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px; /* Increased spacing between articles */
 }
 
 article {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #EFC69B;
 }
 
 .article-details {
     flex: 1;
     text-align: right;
-    font-size: 14px;
+    font-size: 16px; /* Increased font size for the date */
     color: #473144;
     border-right: 1px solid #EFC69B;
-    padding-right: 1rem;
+    padding: 0 1.5rem; /* Added spacing on both sides */
+    min-width: 120px; /* Ensure spacing */
+    line-height: 1.2; /* Reduced space between list items */
 }
 
 .article-content {
@@ -73,20 +80,33 @@ article {
     color: #AF1B3F;
     font-size: 20px;
     font-weight: bold;
+    margin-top: 0.2rem; /* Adjusted top margin for alignment with date */
 }
 
 .article-content img {
     max-width: 150px;
     height: auto;
     display: block;
-    margin-top: 10px;
+    margin: 10px auto; /* Centered the book cover */
 }
 
+.article-info {
+    list-style: none;
+    
+
+}
+
+
+
+/* Ensure filters box is styled correctly */
 .filters {
     flex: 1;
     text-align: right;
     font-size: 14px;
     color: #5A1F1F;
+    border-left: 1px solid #EFC69B;
+    padding-left: 1rem;
+    min-width: 200px;
 }
 
 footer {
@@ -95,13 +115,14 @@ footer {
     font-size: 14px;
 }
 
+/* Accessibility: Skip to Content */
 .skiptocontent a {
-	position: absolute;
-	left: -9999px;
-	top: 0;
-	background-color: #ff0;
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background-color: #ff0;
 }
 
 .skiptocontent a:focus {
-	left: 0;
+    left: 0;
 }

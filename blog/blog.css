@@ -42,7 +42,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
-    max-width: 900px; /* Restrict width to match navbar */
+    max-width: 1000px; /* Restrict width to match navbar */
     margin: 0 auto;
 }
 

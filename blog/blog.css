@@ -126,3 +126,20 @@ footer {
 .skiptocontent a:focus {
     left: 0;
 }
+.star {
+    font-size: 30px;
+    color: #d3d3d3; /* Default color (inactive) */
+    cursor: pointer;
+  }
+  
+  .star.selected {
+    color: #ffcc00; /* Color when the star is selected */
+  }
+  
+  .star.hovered {
+    color: #ffcc00; /* Color when hovering over a star */
+  }
+  
+  .star:hover {
+    color: #ffcc00; /* Color when hovering over a star */
+  }

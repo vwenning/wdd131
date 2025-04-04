@@ -11,7 +11,8 @@
     <header>
         <img src="images/canopy.jpg" alt="Market Canopy" class="banner-image">
         <div class="banner">
-            <h1>Farmers Markets in Temecula</h1>
+            <img src="images/farmers market logo.png" alt="Farmers Market Logo" class="logo">
+
         </div>
         <nav>
             <ul>
@@ -24,22 +25,33 @@
         </nav>
     </header>
     <main>
+        <label for="day-filter">Filter by Day:</label>
+<select id="day-filter">
+  <option value="all">All Days</option>
+  <option value="sunday">Sunday</option>
+  <option value="monday">Monday</option>
+  <option value="tuesday">Tuesday</option>
+  <option value="wednesday">Wednesday</option>
+  <option value="thursday">Thursday</option>
+  <option value="friday">Friday</option>
+  <option value="saturday">Saturday</option>
+</select>
         <section id="markets" class="market-list">
             <h2>Local Farmers Markets</h2>
             <div class="market-grid">
-                <div class="market-item">
+                <div class="market-item" id="old-town-temecula">
                     <a href="old-town-temecula.html">
                         <img src="images/oldtown.jpg" alt="Old Town Temecula Farmers Market">
                         <p>Old Town Temecula Farmers Market</p>
                     </a>
                 </div>
-                <div class="market-item">
+                <div class="market-item" id="promenade-temecula">
                     <a href="promenade-temecula.html">
                         <img src="images/promenade.jpg" alt="Promenade Temecula Farmers Market">
                         <p>CFM at the Promenade Mall</p>
                     </a>
                 </div>
-                <div class="market-item">
+                <div class="market-item" id="vail-headquarters">
                     <a href="vail-headquarters.html">
                         <img src="images/vail.jpg" alt="Vail Headquarters Certified Farmers Market">
                         <p>Vail Certified Farmers Market</p>
@@ -48,24 +60,43 @@
             </div>
         </section>
         
-        <section class="featured-market">
-            <h2>Featured Market of the Month</h2>
-            <img src="images/featured.jpg" alt="Featured Market">
-            <h3>Old Town Temecula Farmers Market</h3>
-            <p>Experience fresh produce, organic goods, and handcrafted products in the heart of historic Old Town Temecula every Saturday morning. The Old Town Temecula Farmers Market offers a vibrant atmosphere where local farmers and artisans showcase their finest products year-round.</p>
-            <a href="old-town-temecula.html" class="button">Learn More</a>
-        </section>
-        
         <section class="nearby-markets">
-            <h2>Nearby Farmers Markets</h2>
-            <p>Explore other certified farmers markets in Riverside County:</p>
-            <ul class="market-list-text">
-                <li><a href="san-jacinto.html">San Jacinto CFM</a> - Thursday & Friday</li>
-                <li><a href="corona.html">Corona Certified Farmers Market</a> - Saturday</li>
-                <li><a href="canyon-lake.html">Canyon Lake CFM</a> - Sunday</li>
-                <li><a href="riverside-downtown.html">Riverside Downtown Farmers Market</a> - Saturday</li>
-                <li><a href="palm-springs.html">Palm Springs Certified Farmers Market</a> - Saturday (Oct-Jun)</li>
-            </ul>
+            <section id="markets" class="market-list">
+                <h2>Nearby Farmers Markets</h2>
+                <p>Explore other certified farmers markets in Riverside County:</p>
+                <div class="market-grid" id="san-jacinto">
+                    <div class="market-item">
+                        <a href="https://www.facebook.com/SanJacintoValleyCertifiedFarmersMarket/">
+                            <img src="images/sanjacinto.jpg" alt="San Jacinto CFM">
+                            <p>San Jacinto CFM</p>
+                        </a>
+                    </div>
+                    <div class="market-item" id="corona">
+                        <a href="https://www.facebook.com/coronafarmersmarket/">
+                            <img src="images/corona.jpg" alt="Corona Certified Farmers Market">
+                            <p>Corona Certified Farmers Market</p>
+                        </a>
+                    </div>
+                    <div class="market-item" id="canyon-lake">
+                        <a href="https://www.canyonlakeca.gov/index.asp?DE=5F42A94A-8C1F-46FA-ABCB-1E6B53B5E4DC&SEC=F224C39D-C23E-4C1E-A390-AE089D504F43">
+                            <img src="images/canyonlake.jpg" alt="Canyon Lake CFM">
+                            <p>Canyon Lake CFM</p>
+                        </a>
+                    </div>
+                    <div class="market-item" id="riverside-downtown">
+                        <a href="https://riversideca.gov/arts2/farmers-market.asp">
+                            <img src="images/riverside.jpg" alt="Riverside Downtown Farmers Market">
+                            <p>Riverside Downtown Farmers Market</p>
+                        </a>
+                    </div>
+                    <div class="market-item" id="palm-springs">
+                        <a href="https://certifiedfarmersmarkets.org/">
+                            <img src="images/palmsprings.jpg" alt="Palm Springs Certified Farmers Market">
+                            <p>Palm Springs Certified Farmers Market</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
     <footer>
